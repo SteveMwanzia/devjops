@@ -1,18 +1,18 @@
 import React from 'react'
-import Icon from "../designs/Group 10.png"
+import Icon from "../designs/bars.png"
 
 const TitleHero = () => {
   const hero = {
     display: "flex",
     justifyContent: "space-between",
     paddingLeft: "150px",
-    backgroundImage: "url('../designs/Group 10.png'), cover",
-    backgroundSize:"cover"
+    width:"1530px",
+    height:"130px",
   }
   return (
-    <div style= {hero}>
+    <div className='hero' style= {hero}>
         <h1> devjobs </h1>
-        <img src={Icon} alt='Memu Icon'/>
+        <img  src={Icon} alt='Memu Icon'/>
     </div>
   )
 }
