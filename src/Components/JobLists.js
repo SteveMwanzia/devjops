@@ -8,15 +8,19 @@ function JobLists() {
     justifyContent:"center",
     alignContent:"center",
     gridTemplateColumns: "33% 33% 33%",
-    gap: "4rem",
+    gap: "2rem",
     backgroundColor: "#f4f6f8",
-    padding: "100px",
+    padding: "100px 200px",
+    margin: "auto" ,
     
   }
   return (
-    <div style={gridstyle}>
+    <div>
+      <div style={gridstyle}>
         {data.map(post=>(<JobListItems key={post.id} post={post}/>))}
+      </div>
     </div>
+    
   )
 }
 

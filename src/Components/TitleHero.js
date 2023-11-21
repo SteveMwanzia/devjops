@@ -6,13 +6,14 @@ const TitleHero = () => {
     display: "flex",
     justifyContent: "space-between",
     paddingLeft: "150px",
-    width:"1530px",
+    paddingRight: "250px",
+    width:"100%",
     height:"130px",
   }
   return (
     <div className='hero' style= {hero}>
         <h1> devjobs </h1>
-        <img  src={Icon} alt='Memu Icon'/>
+        <img style = {{width: "30px", height: "30px", marginTop: "25px"}} src={Icon} alt='Memu Icon'/>
     </div>
   )
 }
